@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form method="POST">
+    <table>
+        <tr>
+            <td>{{ form.name.label }}</td>
+            <td>{{ form.name }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.phone.label }}</td>
+            <td>{{ form.phone }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.genre.label }}</td>
+            <td>{{ form.genre }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.members.label }}</td>
+            <td>{{ form.members }}</td>            
+        </tr>
+        <tr>
+            <td>{{ form.agent.label }}</td>
+            <td>{{ form.agent }}</td>
+        </tr>          
+    </table>
+    {{ form.submit }}
+    {{ form.hidden_tag() }}
+</form>
+
+{% endblock body %}

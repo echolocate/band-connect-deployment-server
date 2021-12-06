@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+    {% for agent in agents %}
+    <table>
+        <h2>{{ agent["name"] }}</h2>
+        <tr>
+            <td><b>Phone Number</b></td>
+            <td>{{ agent["phone"] }}</td> 
+        </tr>        
+    </table>
+    
+    <h3>Bands signed with {{ agent["name"] }}</h3>
+    <table>        
+        {% for band in agent["bands"] %}
+        <tr>
+            <td>{{ band["name"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endfor %}
+{% endblock body %}

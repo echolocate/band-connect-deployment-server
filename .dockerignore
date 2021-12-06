@@ -1,0 +1,7 @@
+*.db
+venv/
+__pycache__/
+.coverage
+.pytest_cache
+.gitignore
+.vscode

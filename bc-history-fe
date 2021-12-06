@@ -1,0 +1,24 @@
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+60611f785c93   54 minutes ago   /bin/sh -c #(nop)  ENTRYPOINT ["python" "app…   0B        
+cd59da89dd73   54 minutes ago   /bin/sh -c pip install -r requirements.txt      13.9MB    
+7ad052ff2210   54 minutes ago   /bin/sh -c #(nop) COPY dir:1f932426d98b81742…   7.23kB    
+9251031d7716   59 minutes ago   /bin/sh -c #(nop) WORKDIR /app                  0B        
+5d4091bbd98c   7 hours ago      /bin/sh -c #(nop)  CMD ["python3"]              0B        
+<missing>      7 hours ago      /bin/sh -c set -ex;   wget -O get-pip.py "$P…   8.31MB    
+<missing>      7 hours ago      /bin/sh -c #(nop)  ENV PYTHON_GET_PIP_SHA256…   0B        
+<missing>      7 hours ago      /bin/sh -c #(nop)  ENV PYTHON_GET_PIP_URL=ht…   0B        
+<missing>      7 hours ago      /bin/sh -c #(nop)  ENV PYTHON_SETUPTOOLS_VER…   0B        
+<missing>      7 hours ago      /bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=21…   0B        
+<missing>      7 hours ago      /bin/sh -c cd /usr/local/bin  && ln -s idle3…   0B        
+<missing>      7 hours ago      /bin/sh -c set -ex   && wget -O python.tar.x…   51MB      
+<missing>      7 hours ago      /bin/sh -c #(nop)  ENV PYTHON_VERSION=3.9.9     0B        
+<missing>      7 hours ago      /bin/sh -c #(nop)  ENV GPG_KEY=E3FF2839C048B…   0B        
+<missing>      9 hours ago      /bin/sh -c apt-get update && apt-get install…   18.5MB    
+<missing>      9 hours ago      /bin/sh -c #(nop)  ENV LANG=C.UTF-8             0B        
+<missing>      9 hours ago      /bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/…   0B        
+<missing>      29 hours ago     /bin/sh -c set -ex;  apt-get update;  apt-ge…   528MB     
+<missing>      29 hours ago     /bin/sh -c apt-get update && apt-get install…   152MB     
+<missing>      29 hours ago     /bin/sh -c set -ex;  if ! command -v gpg > /…   18.9MB    
+<missing>      29 hours ago     /bin/sh -c set -eux;  apt-get update;  apt-g…   10.7MB    
+<missing>      30 hours ago     /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      30 hours ago     /bin/sh -c #(nop) ADD file:e777355768c63f735…   124MB     

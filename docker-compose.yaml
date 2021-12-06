@@ -1,0 +1,31 @@
+version: "3.10"
+services:
+  frontend:
+    build: frontend
+    # image: ${DOCKER_HUB_CREDS_USR}/bc-app-frontend:latest
+    image: markpdance/bc-app-frontend:latest
+    container_name: bc-frontend
+    # deploy:
+    #   mode: replicated
+    #   replicas: 2
+    ports:
+    - target: 5000
+      published: 80
+    environment:
+      BACKEND_HOSTNAME: bc-backend
+  backend:
+    build: backend
+    # image: ${DOCKER_HUB_CREDS_USR}/bc-app-backend:latest
+    image: markpdance/bc-app-backend:latest
+    container_name: bc-backend
+    deploy:
+      # mode: replicated
+      # replicas: 2
+    environment:
+      DATABASE_URI:
+      CREATE_SCHEMA:
+    ports:
+    - target: 5000
+      published: 5000
+
+      

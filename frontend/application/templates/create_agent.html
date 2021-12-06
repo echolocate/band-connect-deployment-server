@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form method="POST">
+    <table>
+        <tr>
+            <td>{{ form.name.label }}</td>
+            <td>{{ form.name }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.phone.label }}</td>
+            <td>{{ form.phone }}</td>
+        </tr>        
+    </table>
+    {{ form.submit }}
+    {{ form.hidden_tag() }}
+</form>
+
+{% endblock body %}
